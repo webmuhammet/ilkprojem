@@ -4,39 +4,79 @@
    padding: 0;
    box-sizing: border-box; 
    font-family: 'Ubuntu', sans-serif;
+}
+body{
+  background-color: #323232;
+}
 
+/*header*/
+header > nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem;
 }
-:root
-{
-    --black: #2f2f2f;
-    --white: #fff;
-    --red:#f83038;
+
+header > nav > ul{
+  list-style: none;
+  display: flex;
 }
-.main
-{
-position: relative;
-min-height: 100vh;
-background: linear gradient(#1c1c1c,#323232);
-padding: 30px  100px;
-display: flex;
-justify-content: center;
-align-items:center ;
-flex-direction:column ;
+header>nav>ul >li>a,
+header > nav > a{
+  
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color:azure ;
+  text-decoration: none;
+  text-transform: uppercase;
+ 
 }
-.main::before
-{
-  content: "Adventure";
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 16vw;
-  font-weight: 700;
-  color:rgba(255 255 255 0.05)
+
+/*main bölümü*/
+
+main > section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+  align-items: center;
 }
-header{
-  position: absolute;
-  top: 0;
+
+section > article > h2,
+section > article> h4{color: azure;}
+section > article > h2{font-size: 60px; text-transform: uppercase;}
+section > article > h4{font-size: 30px; text-transform: uppercase;}
+/*---*/
+#sayfa-resmi{
+  height: auto;
+  width: 45%;
+}
+
+/*footer bölümü*/
+
+ footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin: 1.5rem;
+   position: fixed;
   left: 0;
+  bottom: 0;
   width: 100%;
+  text-align: center;
+ }
+
+ footer > ul{
+  list-style: none;
+  display: flex;
 }
+
+
+
+ footer > ul > li >a{
+   margin-left: 5rem;
+   margin-right: 5rem;
+   color: azure;
+   text-decoration: none;
+   text-transform: uppercase;
+ } 
