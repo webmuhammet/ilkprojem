@@ -34,3 +34,9 @@ flex-direction:column ;
   font-weight: 700;
   color:rgba(255 255 255 0.05)
 }
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
