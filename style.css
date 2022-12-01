@@ -28,9 +28,16 @@ header > nav > a{
   margin-right: 5rem;
   color:azure ;
   text-decoration: none;
-  text-transform: uppercase;
- 
+  text-transform: uppercase; 
 }
+
+nav li a:hover{
+  background: var(--red);
+}
+
+
+
+
 
 /*main bölümü*/
 
@@ -51,6 +58,10 @@ section > article > h4{font-size: 30px; text-transform: uppercase;}
   height: auto;
   width: 45%;
 }
+
+
+
+
 
 /*footer bölümü*/
 
@@ -80,3 +91,4 @@ section > article > h4{font-size: 30px; text-transform: uppercase;}
    text-decoration: none;
    text-transform: uppercase;
  } 
+ 
