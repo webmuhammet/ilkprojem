@@ -5,14 +5,23 @@
    box-sizing: border-box; 
    font-family: 'Ubuntu', sans-serif;
 }
+
+
+
+
+
 body{
-  background-color: #323232;
+  background-image: url(imgs/arka\ plan\ .jpg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 /*header*/
 header > nav{
   display: flex;
   flex-direction: row;
+ align-items: center;
   justify-content: space-between;
   margin: 1.5rem;
 }
@@ -45,13 +54,12 @@ main > section{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 5rem;
   align-items: center;
+  margin-top: 5rem;
 }
-
 section > article > h2,
-section > article> h4{color: azure;}
-section > article > h2{font-size: 60px; text-transform: uppercase;}
+section > article> h4{color: azure;   margin-top: 2.5rem;}
+section > article > h2{font-size: 60px; text-transform: uppercase;   margin-left: auto;}
 section > article > h4{font-size: 30px; text-transform: uppercase;}
 /*---*/
 #sayfa-resmi{
@@ -65,30 +73,13 @@ section > article > h4{font-size: 30px; text-transform: uppercase;}
 
 /*footer bölümü*/
 
- footer{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   margin: 1.5rem;
-   position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
- }
-
- footer > ul{
-  list-style: none;
-  display: flex;
+footer > .down{
+  display: flex; 
+  justify-content: center;
 }
-
-
-
- footer > ul > li >a{
-   margin-left: 5rem;
-   margin-right: 5rem;
-   color: azure;
-   text-decoration: none;
-   text-transform: uppercase;
- } 
+.down > .vid{
+  display: flex;
+  flex-direction: column;
+  color: azure;  
+}
  
