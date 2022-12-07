@@ -74,17 +74,22 @@ section > article > h4{font-size: 30px; text-transform: uppercase;}
   height: auto;
 }
 
-
-
 /*footer bölümü*/
+footer{
+  background-color: black;
+  color: azure;
+}
 
-footer > .down{
-  display: flex; 
-  justify-content: center;
-}
-.down > .vid{
+.up{
   display: flex;
-  flex-direction: column;
-  color: azure;  
+  flex-direction: row;
+  justify-content: space-around;
 }
- 
+
+
+.down{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+}
