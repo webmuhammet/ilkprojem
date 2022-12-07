@@ -67,7 +67,12 @@ section > article > h4{font-size: 30px; text-transform: uppercase;}
   width: 45%;
 }
 
-
+#motor-resmi{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: auto;
+}
 
 
 
