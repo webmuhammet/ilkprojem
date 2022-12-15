@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 *{
    margin: 0;
    padding: 0;
@@ -11,7 +11,7 @@
 
 
 body{
-  background-image: url(imgs/arka\ plan\ .jpg.jpg);
+  background-color: rgb(57, 57, 57);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -39,10 +39,13 @@ header > nav > a{
   text-decoration: none;
   text-transform: uppercase; 
 }
-
-nav li a:hover{
-  background: var(--red);
+ul>li>a:hover{
+  background-color: red;
+  border-radius: 60px;
+  
+  padding: 0.5rem;
 }
+
 
 
 
@@ -76,8 +79,8 @@ section > article > h4{font-size: 30px; text-transform: uppercase;}
 
 /*footer bölümü*/
 footer{
-  background-color: rgb(10, 11, 12);
-  color: azure;
+  background-color: rgb(57, 57, 57);
+  color: rgb(235, 235, 235);
   margin: 1.5rem;
   position: fixed;
   left: 0;
@@ -89,8 +92,12 @@ footer{
 .up{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left:10rem ;
+  margin-right:5rem;
 }
+
+
 
 
 .down{
