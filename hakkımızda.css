@@ -39,12 +39,28 @@ header > nav{
 
 
 main{
-    margin-left: 5rem;
-    margin-right: 5rem;
-    color:azure ;
-    text-decoration: none;
-    text-transform: uppercase; 
-    padding: 1rem;
+  body {
+    font-family: Arial;
+    color: #333333;
+  }
+  
+  h1, h2 {
+    font-size: 22px;
+    color: #4caf50;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
 }
 
 
