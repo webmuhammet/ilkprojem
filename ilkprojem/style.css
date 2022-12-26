@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+body{
+  background-color: rgb(57, 57, 57);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/*header*/
+header > nav{
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+header > nav > ul{
+  list-style: none;
+  display: flex;
+}
+header>nav>ul >li>a,
+header > nav > a{
+  
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color:azure ;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+ul>li>a:hover{
+  background-color: red;
+  border-radius: 60px;
+  padding: 0.5rem;
+}
+
+
+
+
+
+
+/*main bölümü*/
+
+main > section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+section > article > h2,
+section > article> h4{color: azure;   margin-top: 2.5rem;}
+section > article > h2{font-size: 60px; text-transform: uppercase;   margin-left: auto;}
+section > article > h4{font-size: 30px; text-transform: uppercase;}
+/*---*/
+#sayfa-resmi{
+  height: auto;
+  width: 65%;
+}
+
+#motor-resmi{
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: auto;
+}
+
+
+
+
+
+
+/*footer bölümü*/
+footer{
+  background-color: rgb(57, 57, 57);
+  color: rgb(235, 235, 235);
+  margin: 1.5rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding:1rem;
+}
+
+.up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:20rem ;
+  margin-right:5rem;
+}
+
+
+
+
+.down{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
