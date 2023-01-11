@@ -1,5 +1,4 @@
 
-
 .resmm{
     height: auto;
     width: 45%;
@@ -7,6 +6,10 @@
 
 
 
+
+body{
+  height: 100vh;
+}
 
 /*header*/
 header > nav{
@@ -37,10 +40,10 @@ header > nav{
   }
   
 
-
+/*
 main{
   body {
-    font-family: Arial;
+    font-family: ;
     color: #333333;
   }
   
@@ -62,6 +65,7 @@ main{
   }
   
 }
+*/
 
 
 body{
@@ -72,35 +76,3 @@ body{
 }
 
 
-
-
-/*footer bölümü*/
-footer{
-    background-color: rgb(57, 57, 57);
-    color: rgb(235, 235, 235);
-    margin: 1.5rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding:1rem;
-  }
-  
-  .up{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left:20rem ;
-    margin-right:5rem;
-  }
-  
-  
-  
-  
-  .down{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-  
-  

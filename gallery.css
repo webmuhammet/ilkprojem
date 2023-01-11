@@ -122,29 +122,173 @@ section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .
 
 
 /*footer bölümü*/
-footer{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+  padding:0%;
+  margin:0%;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: auto;
+  background: url("https://images.unsplash.com/photo-1565461133566-e35e9e120d5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    left bottom no-repeat;
   background-color: rgb(57, 57, 57);
-  color: rgb(235, 235, 235);
-  margin: 1.5rem;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    height:10vh ;
+  background-size: cover;
+  background-blend-mode: multiply;
+   /* background-attachment:fixed ;
+    activate when you put in your website (optional)
+  */
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+.hero .container{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.flex{
+  display: flex;
+}
+.container__about{
+  margin-bottom: 30px;
+}
+
+.container__about p{
+  margin-top: 10px;
+  max-width: 300px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.container-pages{
+  column-gap: 30px;
+}
+
+.container-pages ul{
+  padding-top: 10px;
+  list-style: none;
+  line-height: 24px;
+}
+.container-pages ul a{
+  color: inherit;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.container-pages ul a:hover{
+  color: #017143;
+}
+footer .by{
+margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .by p{
+  color: rgba(255, 255, 255, 0.605);
+  font-size: 14px;
+}
+.line__separete{
+  margin-top: 30px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  z-index: 999;
+}
+.icons {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 25px;
+  
+}
+
+.icon1 {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+      outline-offset, outline-color,
+      background-color;
+  transition-duration: .25s;
+}
+
+.icon1:hover {
+  outline-offset: 4px;
+}
+
+.icon1:hover i {
+  animation: shake .25s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(circle at 30% 107%,
+          #fdf497 0%, #fdf497 5%,
+          #fd5949 45%, #d6249f 60%,
+          #285AEB 90%);
+  outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+.icon--github:hover {
+  background-color: #000000;
+  outline-color: #000000;
+}
+
+@keyframes shake {
+  10% {
+      transform: rotate(15deg);
   }
 
-.up{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left:20rem ;
-  margin-right:5rem;
+  20% {
+      transform: rotate(-15deg);
+  }
+
+  30% {
+      transform: rotate(15deg);
+  }
+
+  40% {
+      transform: rotate(-15deg);
+  }
 }
 
+@media only screen and (max-width: 800px) {
+  .hero{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-
-
-.down{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
+  .container__about h2{
+    font-size: 20px;
+  }
+  .container__about p{
+    font-size: 12px;
+  }
+  .container__recentpages h2{
+    font-size: 20px;
+  }
+  .container-pages ul a{
+    font-size: 12px;
+  }
+  footer .by p{
+    font-size: 12px;
+  }
+} 
