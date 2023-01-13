@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-color: rgb(57, 57, 57);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 
 .resmm{
     height: auto;
     width: 45%;
 }
-
-
-
 
 body{
   height: 100vh;
@@ -15,7 +28,7 @@ body{
 header > nav{
     display: flex;
     flex-direction: row;
-   align-items: center;
+    align-items: center;
     justify-content: space-between;
     margin: 1.5rem;
   }
@@ -25,49 +38,74 @@ header > nav{
     display: flex;
   }
   header>nav>ul >li>a,
-  header > nav > a{
-    
-    margin-left: 5rem;
-    margin-right: 5rem;
-    color:azure ;
-    text-decoration: none;
-    text-transform: uppercase; 
-  }
-  ul>li>a:hover{
-    background-color: red;
-    border-radius: 60px;
-    padding: 0.5rem;
-  }
+header > nav > a{
   
-
-/*
-main{
-  body {
-    font-family: ;
-    color: #333333;
-  }
-  
-  h1, h2 {
-    font-size: 22px;
-    color: #4caf50;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color:azure ;
+  text-decoration: none;
+  text-transform: uppercase; 
+  padding: 10px;
+  transition: 500ms;
 }
-*/
+ul>li>a:hover{
+  border-radius: 60px;
+  border-bottom: solid 2px red;
+}
+  
+
+  @media (max-width: 1000px){
+  header > nav > ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  header > nav > ul > li{
+    margin: 10px 10px;
+    justify-content: center;
+    display: flex;
+  }
+
+  header > nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .one > article{
+    margin-bottom: 50px;
+  }
+
+  #sayfa-resmi{
+    width: 500px;
+  }
+}
 
 
+main{
+  display: flex;
+  justify-content: center;
+}
+
+main > section{
+  justify-content: center;
+  text-align: center;
+}
+
+main > section > h1,
+main > section > p,
+main > section > h2,
+main > section > img{
+  margin: 30px 30px;
+  color: azure;
+
+} 
 body{
     background-color: rgb(57, 57, 57);
     background-repeat: no-repeat;

@@ -22,7 +22,7 @@ body{
 header > nav{
   display: flex;
   flex-direction: row;
- align-items: center;
+  align-items: center;
   justify-content: space-between;
   margin: 1.5rem;
 }
@@ -39,19 +39,56 @@ header > nav > a{
   color:azure ;
   text-decoration: none;
   text-transform: uppercase; 
+  padding: 1rem;
+  transition: 500ms;
 }
 ul>li>a:hover{
-  background-color: red;
   border-radius: 60px;
-  padding: 0.5rem;
+  border-bottom: solid 2px red;
+}
+
+@media (max-width: 1000px){
+  header > nav > ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  header > nav > ul > li{
+    margin: 10px 10px;
+    justify-content: center;
+    display: flex;
+  }
+
+  header > nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .one > article{
+    margin-bottom: 50px;
+  }
+
+  #sayfa-resmi{
+    width: 500px;
+  }
+}
+
+form{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: "Inter", sans-serif;
   background-color:rgb(85, 83, 83);
@@ -79,7 +116,8 @@ body {
   display: block;
   font-weight: 500;
   font-size: 16px;
-  color: #gray;
+  color: azure;
+  text-align: center;
   margin-bottom: 12px;
 }
 .formbold-form-label-2 {
@@ -96,8 +134,8 @@ body {
   background: lightgray;
   font-weight: 500;
   font-size: 16px;
-  color: rgb(241, 241, 241);
   outline: none;
+  text-align: center;
   resize: none;
 }
 .formbold-form-input:focus {
@@ -142,4 +180,3 @@ body {
     width: 50%;
   }
 }
-

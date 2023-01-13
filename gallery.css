@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-*{
+ *{
    margin: 0;
    padding: 0;
    box-sizing: border-box; 
@@ -21,7 +21,7 @@ body{
 header > nav{
   display: flex;
   flex-direction: row;
- align-items: center;
+  align-items: center;
   justify-content: space-between;
   margin: 1.5rem;
 }
@@ -32,20 +32,51 @@ header > nav > ul{
 }
 header>nav>ul >li>a,
 header > nav > a{
-  
   margin-left: 5rem;
   margin-right: 5rem;
   color:azure ;
   text-decoration: none;
   text-transform: uppercase; 
+  padding: 1rem;
+  transition: 500ms;
 }
 ul>li>a:hover{
-  background-color: red;
   border-radius: 60px;
-  padding: 0.5rem;
+  border-bottom: solid 2px red;
 }
 
+@media (max-width: 1000px){
+  header > nav > ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
+  header > nav > ul > li{
+    margin: 10px 10px;
+    justify-content: center;
+    display: flex;
+  }
+
+  header > nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .one > article{
+    margin-bottom: 50px;
+  }
+
+  #sayfa-resmi{
+    width: 500px;
+  }
+}
 
 
 

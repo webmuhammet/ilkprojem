@@ -70,11 +70,12 @@ header > nav > a{
   color:azure ;
   text-decoration: none;
   text-transform: uppercase; 
+  padding: 10px;
+  transition: 500ms;
 }
 ul>li>a:hover{
-  background-color: red;
   border-radius: 60px;
-  padding: 0.5rem;
+  border-bottom: solid 2px red;
 }
 
 /*main bölümü*/
@@ -245,7 +246,6 @@ footer .by p{
   margin-top: 20px;
   display: flex;
   column-gap: 25px;
-  
 }
 
 .icon1 {
@@ -318,11 +318,20 @@ footer .by p{
   .hero{
     padding: 10px;
     display: flex;
+    margin: auto;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .container__about h2{
     font-size: 20px;
+    
   }
   .container__about p{
     font-size: 12px;
@@ -342,11 +351,12 @@ footer .by p{
   main{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   footer{
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
-
 }

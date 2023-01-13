@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;800&family=Lora:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
 
 * {
@@ -26,19 +27,53 @@ header > nav{
     display: flex;
   }
   header>nav>ul >li>a,
-  header > nav > a{
-    
-    margin-left: 5rem;
-    margin-right: 5rem;
-    color:azure ;
-    text-decoration: none;
-    text-transform: uppercase; 
+header > nav > a{
+  
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color:azure ;
+  text-decoration: none;
+  text-transform: uppercase; 
+  padding: 1rem;
+  transition: 500ms;
+}
+ul>li>a:hover{
+  border-radius: 60px;
+  border-bottom: solid 2px red;
+}
+
+@media (max-width: 1000px){
+  header > nav > ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
   }
-  ul>li>a:hover{
-    background-color: red;
-    border-radius: 60px;
-    padding: 0.5rem;
+
+  header > nav > ul > li{
+    margin: 10px 10px;
+    justify-content: center;
+    display: flex;
   }
+
+  header > nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .one > article{
+    margin-bottom: 50px;
+  }
+
+  #sayfa-resmi{
+    width: 500px;
+  }
+}
 
  
 
@@ -46,7 +81,6 @@ header > nav{
 
 
     
-  @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap");
 
 
 
